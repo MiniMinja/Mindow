@@ -6,6 +6,7 @@ public class Test {
 		Thread job = new Thread(new Runnable() {
 			public void run() {
 				try {
+					Drawer.getInstance().tick();
 					m.render();
 					Thread.sleep(11);
 				}catch(InterruptedException e) {

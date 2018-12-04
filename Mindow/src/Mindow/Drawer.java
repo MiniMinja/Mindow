@@ -2,7 +2,7 @@ package Mindow;
 
 import java.awt.Graphics;
 
-public abstract class Drawer {
+public abstract class Drawer{
 	
 	private static Drawer drawer;
 	
