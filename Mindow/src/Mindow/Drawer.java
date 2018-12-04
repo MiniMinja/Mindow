@@ -15,5 +15,6 @@ public abstract class Drawer {
 		Drawer.drawer = drawer;
 	}
 	
+	public abstract void tick();
 	public abstract void draw(Graphics g);
 }

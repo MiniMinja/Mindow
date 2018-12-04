@@ -6,6 +6,10 @@ import javax.swing.*;
 
 public class Mindow extends JPanel{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	public static Mindow getDefault() {
 		Dimension d = Toolkit.getDefaultToolkit().getScreenSize();
 		return new Mindow(d.width * 3 / 4, d.height * 3 / 4);
