@@ -1,8 +1,10 @@
 package Mindow;
 
 import java.awt.*;
+import java.awt.event.KeyListener;
 
 import javax.swing.*;
+import javax.swing.event.MouseInputListener;
 
 public class Mindow extends JPanel{
 	
@@ -38,5 +40,17 @@ public class Mindow extends JPanel{
 	}
 	public void render() {
 		this.repaint();
+	}
+	
+	public void addKeyListener(KeyListener keylistener) {
+		super.addKeyListener(keylistener);
+		frame.addKeyListener(keylistener);
+	}
+	
+	public void addMouseInputListener(MouseInputListener mil) {
+		super.addMouseListener(mil);
+		super.addMouseMotionListener(mil);
+		frame.addMouseListener(mil);
+		frame.addMouseMotionListener(mil);
 	}
 }
